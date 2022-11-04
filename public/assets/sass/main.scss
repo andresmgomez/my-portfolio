@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/**********************************
+*   01. Fonts
+**********************************/
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**********************************
+*   02. Color Variables
+**********************************/
+$main-white-color: #fff;
+$main-gray-color: #bbb;
+$main-black-color: #171a1d;
+$main-transparent-color: 207, 31, 31;
+$general-site-color: #727272;
+
+$light-black-color: #333;
+$medium-black_color: #2e333c;
+$dark-black_color: #0f0f0f;
+
+$main-red-color: #cf1f1f;
+$dark_red-color: #bc1c1c;
+
+/**********************************
+*   02. Site Variables
+**********************************/
+* {
+	--body-font-family: 'Nunito', Helvetica, Arial, sans-serif;
+	--title-font-family: 'Saira', Helvetica, Arial, sans-serif;
+}
+
+/**********************************
+*   03. General Styles
+**********************************/
+html {
+	scroll-behavior: auto;
+}
+
+body {
+	padding: 0;
+	font-family: var(--body-font-family);
+	font-size: 16px;
+	font-weight: 400;
+	color: #909090;
+	background: $main-black-color;
+	line-height: 1.8em;
+	word-spacing: 0px;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

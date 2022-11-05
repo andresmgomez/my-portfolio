@@ -1,10 +1,10 @@
 import Head from 'next/head';
+import Navbar from './Navbar';
 
 export default function Layout({ children }) {
 	return (
 		<div>
 			<Head>
-				<meta charset='utf-8' />
 				<title></title>
 				<meta name='description' content='' />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
@@ -18,8 +18,10 @@ export default function Layout({ children }) {
 				<link rel='icon' href='/icon.svg' type='image/svg+xml' />
 				<link rel='apple-touch-icon' href='icon.png' />
 			</Head>
-			<header></header>
-			<main>{children}</main>
+			<header>
+				<Navbar />
+			</header>
+			<main className='site-container'>{children}</main>
 		</div>
 	);
 }
